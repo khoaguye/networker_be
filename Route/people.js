@@ -3,6 +3,6 @@ import { addPeople } from "../Controller/people.js"
 
 const router = express.Router()
 
-router.post(303,"/infor", addPeople)
+router.post("/infor", addPeople)
 
 export default router  
