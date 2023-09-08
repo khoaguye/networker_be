@@ -5,4 +5,4 @@ const router = express.Router()
 
 router.post("/infor", addPeople)
 
-export default router
+export default router  
