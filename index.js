@@ -24,8 +24,8 @@ app.use(express.json())
 
 app.use("/people", peopleRoutes)
 
-new CronJob('*/5 * * * *', function() {
-    axios.get('https://networker-be.onrender.com') // replace with your server url
+new CronJob('* * * * * *', function() {
+    axios.get('https://networker-be.onrender.com') 
       .then(response => {
         console.log('Server pinged successfully');
       })
