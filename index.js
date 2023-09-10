@@ -1,8 +1,8 @@
 import express from "express"
 import peopleRoutes  from "./Route/people.js"
 import cors from "cors"
-import { CronJob } from "cron";
-import axios from 'axios';
+// import { CronJob } from "cron";
+// import axios from 'axios';
 
 
 const app = express();
@@ -24,15 +24,15 @@ app.use(express.json())
 
 app.use("/people", peopleRoutes)
 
-new CronJob('* * * * * *', function() {
-    axios.get('https://networker-be.onrender.com') 
-      .then(response => {
-        console.log('Server pinged successfully');
-      })
-      .catch(error => {
-        console.log('Error pinging server: ', error);
-      });
-  }, null, true, 'America/Chicago');
+// new CronJob('* * * * * *', function() {
+//     axios.get('https://networker-be.onrender.com') 
+//       .then(response => {
+//         console.log('Server pinged successfully');
+//       })
+//       .catch(error => {
+//         console.log('Error pinging server: ', error);
+//       });
+//   }, null, true, 'America/Chicago');
 
 
 
