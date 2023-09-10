@@ -11,7 +11,7 @@ const app = express();
 
 
 
-
+//allow origin
 const allowedOrigins = ['https://networker-fe.vercel.app', 'http://networker-fe.vercel.app', 'http://localhost:3000'];
 const corsOptions ={
     origin:allowedOrigins, 
