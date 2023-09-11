@@ -37,8 +37,8 @@ app.get('/', function(req, res){
 //   }, null, true, 'America/Chicago');
 
 
-
-app.listen(8000, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, "0.0.0.0", () => {
     console.log("connected")
 })
 
