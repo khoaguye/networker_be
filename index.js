@@ -24,7 +24,7 @@ app.use(express.json())
 
 app.use("/people", peopleRoutes)
 app.get('/', function(req, res){
-    res.render('server is running');
+    res.send('server is running');
   });
 // new CronJob('* * * * * *', function() {
 //     axios.get('https://networker-be.onrender.com') 
